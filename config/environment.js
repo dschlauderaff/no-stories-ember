@@ -1,11 +1,27 @@
 'use strict';
 
+const AUTH_CONFIG = require('./auth0-variables')
+
 module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'no-stories',
     environment,
     rootURL: '/',
     locationType: 'auto',
+    'ember-simple-auth': {
+      authenticationRoute: 'login',
+      auth0: {
+        clientID: AUTH_CONFIG.clientID,
+        domain: AUTH_CONFIG.domain,
+        logoutReturnToURL: '/logout',
+        enableImpersonation: false,
+        silentAuth: {
+          // Silent authentication is off by default.
+          // See 'Silent Authentication' section in ember-simple-auth-auth0
+          // readme for a list of options that go here.
+        }
+      }
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
