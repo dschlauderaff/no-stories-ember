@@ -1,12 +1,19 @@
 <header class="bg-black-90 fixed w-100 ph3 pv3 pv4-ns ph4-m ph5-l">
   <nav class="f6 fw6 ttu tracked">
-
     {{#if session.isAuthenticated}}
-    <a href="#" class="link dim white dib mr3" {{action "logout"}}>Logout</a>
+      <a href="#" class="link dim white dib mr3" {{action "logout"}}>
+        Logout
+      </a>
     {{else}}
-    <a href="#" class="link dim white dib mr3" {{action "login"}}>Login</a>
+      <a href="#" class="link dim white dib mr3" {{action "login"}}>
+        Login
+      </a>
     {{/if}}
-    <a class="link dim white dib mr3" href="#" title="Home">Placeholder</a>
-    <a class="link dim white dib" href="#" title="Contact">Contact</a>
+    <a class="link dim white dib mr3" href="#" title="Home">
+      Placeholder
+    </a>
+    <a class="link dim white dib" href="#" title="Contact">
+      Contact
+    </a>
   </nav>
 </header>
