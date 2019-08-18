@@ -6,7 +6,7 @@ module.exports = {
   },
   plugins: ['ember'],
   extends: ['eslint:recommended', 'plugin:ember/recommended'],
-  parser: 'babel-eslint',
+  // parser: 'babel-eslint',
   env: {
     browser: true
   },
@@ -40,7 +40,9 @@ module.exports = {
 
           // this can be removed once the following is fixed
           // https://github.com/mysticatea/eslint-plugin-node/issues/77
-          'node/no-unpublished-require': 'off'
+          'node/no-unpublished-require': 'off',
+          'no-debugger': 'warn',
+          'no-console': 'warn'
         }
       )
     }
