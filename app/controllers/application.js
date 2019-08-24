@@ -15,7 +15,7 @@ export default Controller.extend({
         'authenticator:auth0-universal',
         authOptions,
         (err, email) => {
-          console.log(`Email link sent to ${email}`)
+          alert(`Email link sent to ${email}`)
         }
       )
     },
