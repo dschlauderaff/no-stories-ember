@@ -22,6 +22,9 @@ module.exports = function(environment) {
         }
       }
     },
+    apollo: {
+      apiURL: 'localhost:3000/graphql'
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
