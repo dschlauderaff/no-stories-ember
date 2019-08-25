@@ -14,6 +14,7 @@ module.exports = function(environment) {
         clientID: AUTH_CONFIG.clientID,
         domain: AUTH_CONFIG.domain,
         logoutReturnToURL: '/',
+        audience: 'https://nostories/api',
         enableImpersonation: false,
         silentAuth: {
           // Silent authentication is off by default.

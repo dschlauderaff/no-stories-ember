@@ -7,8 +7,9 @@ export default Controller.extend({
   actions: {
     login() {
       const authOptions = {
-        responseType: 'token',
-        scope: 'openid email profile'
+        responseType: 'token id_token',
+        scope: 'openid email profile',
+        audience: 'https://nostories/api'
       }
 
       this.session.authenticate(
