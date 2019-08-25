@@ -1,4 +1,5 @@
 <Navigation @login={{action "login"}} @logout={{action "logout"}} />
 <div class="main">
+  {{log this.session.data.authenticated}}
   {{outlet}}
 </div>
