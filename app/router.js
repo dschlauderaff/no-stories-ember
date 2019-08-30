@@ -7,7 +7,8 @@ const Router = EmberRouter.extend({
 })
 
 Router.map(function() {
-  this.route('private-test');
+  this.route('private-test')
+  this.route('login')
 })
 
 export default Router
