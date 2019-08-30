@@ -1,9 +1,9 @@
 import Route from '@ember/routing/route'
-import ApplicationRouteMixin from 'ember-simple-auth-auth0/mixins/application-route-mixin'
+import AuthenticatedRouteMixin from 'ember-simple-auth/mixins/authenticated-route-mixin'
 import { inject as service } from '@ember/service'
 import fetch from 'fetch'
 
-export default Route.extend(ApplicationRouteMixin, {
+export default Route.extend(AuthenticatedRouteMixin, {
   session: service(),
 
   model() {
