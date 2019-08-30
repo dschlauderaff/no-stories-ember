@@ -1,5 +1,8 @@
-<header class="bg-black-90 fixed w-100 ph3 pv3 pv4-ns ph4-m ph5-l">
+<header class="navbar fixed w-100 ph3 pv3 pv4-ns ph4-m ph5-l">
   <nav class="f6 fw6 ttu tracked">
+    <span class="logo-text">
+      No Stories
+    </span>
     {{#if session.isAuthenticated}}
       <a href="#" class="link dim white dib mr3" {{action "logout"}}>
         Logout
